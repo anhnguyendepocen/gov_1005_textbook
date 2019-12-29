@@ -24,7 +24,7 @@
 <meta name="author" content="Chester Ismay and Albert Y. Kim   Foreword by Kelly S. McConville" />
 
 
-<meta name="date" content="2019-12-27" />
+<meta name="date" content="2019-12-28" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -59,16 +59,6 @@
 <script src="libs/moment-timezone-0.2.5/moment-timezone-with-data.js"></script>
 <script src="libs/moment-fquarter-1.0.0/moment-fquarter.min.js"></script>
 <script src="libs/dygraphs-binding-1.1.1.6/dygraphs.js"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-89938436-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 
 
 <style type="text/css">
@@ -149,23 +139,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul class="summary">
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome to ModernDive</a></li>
 <li class="chapter" data-level="" data-path="foreword.html"><a href="foreword.html"><i class="fa fa-check"></i>Foreword</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html"><i class="fa fa-check"></i>Preface</a><ul>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#introduction-for-students"><i class="fa fa-check"></i>Introduction for students</a><ul>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#what-we-hope-you-will-learn-from-this-book"><i class="fa fa-check"></i>What we hope you will learn from this book</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#datascience-pipeline"><i class="fa fa-check"></i>Data/science pipeline</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#reproducible-research"><i class="fa fa-check"></i>Reproducible research</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#final-note-for-students"><i class="fa fa-check"></i>Final note for students</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#introduction-for-instructors"><i class="fa fa-check"></i>Introduction for instructors</a><ul>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#resources"><i class="fa fa-check"></i>Resources</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#why-did-we-write-this-book"><i class="fa fa-check"></i>Why did we write this book?</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#who-is-this-book-for"><i class="fa fa-check"></i>Who is this book for?</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#connect-and-contribute"><i class="fa fa-check"></i>Connect and contribute</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#acknowledgements"><i class="fa fa-check"></i>Acknowledgements</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#about-this-book"><i class="fa fa-check"></i>About this book</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the authors</a></li>
 <li class="chapter" data-level="1" data-path="1-getting-started.html"><a href="1-getting-started.html"><i class="fa fa-check"></i><b>1</b> Getting Started with Data in R</a><ul>
 <li class="chapter" data-level="1.1" data-path="1-getting-started.html"><a href="1-getting-started.html#r-rstudio"><i class="fa fa-check"></i><b>1.1</b> What are R and RStudio?</a><ul>
 <li class="chapter" data-level="1.1.1" data-path="1-getting-started.html"><a href="1-getting-started.html#installing"><i class="fa fa-check"></i><b>1.1.1</b> Installing R and RStudio</a></li>
@@ -578,9 +551,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<html>
-<img src='https://moderndive.com/wide_format.png' alt="ModernDive">
-</html>
 <div id="appendixC" class="section level1">
 <h1><span class="header-section-number">C</span> Reach for the Stars</h1>
 <div id="needed-packages-11" class="section level2 unnumbered">
@@ -611,8 +581,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb570"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb570-1" data-line-number="1"><span class="kw">ggplot</span>(<span class="dt">data =</span> flights, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> carrier)) <span class="op">+</span></a>
 <a class="sourceLine" id="cb570-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_bar</span>() <span class="op">+</span></a>
 <a class="sourceLine" id="cb570-3" data-line-number="3"><span class="st">  </span><span class="kw">scale_x_discrete</span>(<span class="dt">limits =</span> <span class="kw">names</span>(sorted_flights))</a></code></pre></div>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-543"></span>
-<img src="ModernDive_files/figure-html/unnamed-chunk-543-1.png" alt="Number of flights departing NYC in 2013 by airline - Descending numbers." width="\textwidth" />
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-542"></span>
+<img src="Bayesian-Data-Science_files/figure-html/unnamed-chunk-542-1.png" alt="Number of flights departing NYC in 2013 by airline - Descending numbers." width="\textwidth" />
 <p class="caption">
 FIGURE C.1: Number of flights departing NYC in 2013 by airline - Descending numbers.
 </p>
@@ -699,8 +669,8 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/moderndive/moderndive_book/edit/master/93-appendixC.Rmd",
-"text": "Edit"
+"link": null,
+"text": null
 },
 "history": {
 "link": null,

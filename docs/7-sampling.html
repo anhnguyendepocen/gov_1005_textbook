@@ -24,7 +24,7 @@
 <meta name="author" content="Chester Ismay and Albert Y. Kim   Foreword by Kelly S. McConville" />
 
 
-<meta name="date" content="2019-12-27" />
+<meta name="date" content="2019-12-28" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -59,16 +59,6 @@
 <script src="libs/moment-timezone-0.2.5/moment-timezone-with-data.js"></script>
 <script src="libs/moment-fquarter-1.0.0/moment-fquarter.min.js"></script>
 <script src="libs/dygraphs-binding-1.1.1.6/dygraphs.js"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-89938436-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 
 
 <style type="text/css">
@@ -149,23 +139,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul class="summary">
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome to ModernDive</a></li>
 <li class="chapter" data-level="" data-path="foreword.html"><a href="foreword.html"><i class="fa fa-check"></i>Foreword</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html"><i class="fa fa-check"></i>Preface</a><ul>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#introduction-for-students"><i class="fa fa-check"></i>Introduction for students</a><ul>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#what-we-hope-you-will-learn-from-this-book"><i class="fa fa-check"></i>What we hope you will learn from this book</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#datascience-pipeline"><i class="fa fa-check"></i>Data/science pipeline</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#reproducible-research"><i class="fa fa-check"></i>Reproducible research</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#final-note-for-students"><i class="fa fa-check"></i>Final note for students</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#introduction-for-instructors"><i class="fa fa-check"></i>Introduction for instructors</a><ul>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#resources"><i class="fa fa-check"></i>Resources</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#why-did-we-write-this-book"><i class="fa fa-check"></i>Why did we write this book?</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#who-is-this-book-for"><i class="fa fa-check"></i>Who is this book for?</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#connect-and-contribute"><i class="fa fa-check"></i>Connect and contribute</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#acknowledgements"><i class="fa fa-check"></i>Acknowledgements</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#about-this-book"><i class="fa fa-check"></i>About this book</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the authors</a></li>
 <li class="chapter" data-level="1" data-path="1-getting-started.html"><a href="1-getting-started.html"><i class="fa fa-check"></i><b>1</b> Getting Started with Data in R</a><ul>
 <li class="chapter" data-level="1.1" data-path="1-getting-started.html"><a href="1-getting-started.html#r-rstudio"><i class="fa fa-check"></i><b>1.1</b> What are R and RStudio?</a><ul>
 <li class="chapter" data-level="1.1.1" data-path="1-getting-started.html"><a href="1-getting-started.html#installing"><i class="fa fa-check"></i><b>1.1.1</b> Installing R and RStudio</a></li>
@@ -578,9 +551,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<html>
-<img src='https://moderndive.com/wide_format.png' alt="ModernDive">
-</html>
 <div id="sampling" class="section level1">
 <h1><span class="header-section-number">Chapter 7</span> Sampling</h1>
 <p>In this chapter, we kick off the third portion of this book on statistical inference by learning about <em>sampling</em>. The concepts behind sampling form the basis of confidence intervals and hypothesis testing, which we’ll cover in Chapters <a href="8-confidence-intervals.html#confidence-intervals">8</a> and <a href="9-hypothesis-testing.html#hypothesis-testing">9</a>. We will see that the tools that you learned in the data science portion of this book, in particular data visualization and data wrangling, will also play an important role in the development of your understanding. As mentioned before, the concepts throughout this text all build into a culmination allowing you to “tell your story with data.”</p>
@@ -691,7 +661,7 @@ FIGURE 7.6: Hand-drawn histogram of first 10 out of 33 proportions.
 <a class="sourceLine" id="cb211-3" data-line-number="3"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Proportion of 50 balls that were red&quot;</span>, </a>
 <a class="sourceLine" id="cb211-4" data-line-number="4">       <span class="dt">title =</span> <span class="st">&quot;Distribution of 33 proportions red&quot;</span>) </a></code></pre></div>
 <div class="figure" style="text-align: center"><span id="fig:samplingdistribution-tactile"></span>
-<img src="ModernDive_files/figure-html/samplingdistribution-tactile-1.png" alt="Distribution of 33 proportions based on 33 samples of size 50." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/samplingdistribution-tactile-1.png" alt="Distribution of 33 proportions based on 33 samples of size 50." width="\textwidth" />
 <p class="caption">
 FIGURE 7.7: Distribution of 33 proportions based on 33 samples of size 50.
 </p>
@@ -903,7 +873,7 @@ We get an error message telling us that we cannot take a sample that has more ro
 <a class="sourceLine" id="cb228-3" data-line-number="3"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Proportion of 50 balls that were red&quot;</span>, </a>
 <a class="sourceLine" id="cb228-4" data-line-number="4">       <span class="dt">title =</span> <span class="st">&quot;Distribution of 33 proportions red&quot;</span>) </a></code></pre></div>
 <div class="figure" style="text-align: center"><span id="fig:samplingdistribution-virtual"></span>
-<img src="ModernDive_files/figure-html/samplingdistribution-virtual-1.png" alt="Distribution of 33 proportions based on 33 samples of size 50." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/samplingdistribution-virtual-1.png" alt="Distribution of 33 proportions based on 33 samples of size 50." width="\textwidth" />
 <p class="caption">
 FIGURE 7.8: Distribution of 33 proportions based on 33 samples of size 50.
 </p>
@@ -911,7 +881,7 @@ FIGURE 7.8: Distribution of 33 proportions based on 33 samples of size 50.
 <p>Observe that we occasionally obtained proportions red that are less than 30%. On the other hand, we occasionally obtained proportions that are greater than 45%. However, the most frequently occurring proportions were between 35% and 40% (for 11 out of 33 samples). Why do we have these differences in proportions red? Because of <em>sampling variation</em>.</p>
 <p>Let’s now compare our virtual results with our tactile results from the previous section in Figure <a href="7-sampling.html#fig:tactile-vs-virtual">7.9</a>. Observe that both histograms are somewhat similar in their center and variation, although not identical. These slight differences are again due to random sampling variation. Furthermore, observe that both distributions are somewhat bell-shaped.</p>
 <div class="figure" style="text-align: center"><span id="fig:tactile-vs-virtual"></span>
-<img src="ModernDive_files/figure-html/tactile-vs-virtual-1.png" alt="Comparing 33 virtual and 33 tactile proportions red." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/tactile-vs-virtual-1.png" alt="Comparing 33 virtual and 33 tactile proportions red." width="\textwidth" />
 <p class="caption">
 FIGURE 7.9: Comparing 33 virtual and 33 tactile proportions red.
 </p>
@@ -973,7 +943,7 @@ FIGURE 7.9: Comparing 33 virtual and 33 tactile proportions red.
 <a class="sourceLine" id="cb233-3" data-line-number="3"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Proportion of 50 balls that were red&quot;</span>, </a>
 <a class="sourceLine" id="cb233-4" data-line-number="4">       <span class="dt">title =</span> <span class="st">&quot;Distribution of 1000 proportions red&quot;</span>) </a></code></pre></div>
 <div class="figure" style="text-align: center"><span id="fig:samplingdistribution-virtual-1000"></span>
-<img src="ModernDive_files/figure-html/samplingdistribution-virtual-1000-1.png" alt="Distribution of 1000 proportions based on 1000 samples of size 50." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/samplingdistribution-virtual-1000-1.png" alt="Distribution of 1000 proportions based on 1000 samples of size 50." width="\textwidth" />
 <p class="caption">
 FIGURE 7.10: Distribution of 1000 proportions based on 1000 samples of size 50.
 </p>
@@ -1063,7 +1033,7 @@ FIGURE 7.11: Three shovels to extract three different sample sizes.
 <a class="sourceLine" id="cb234-49" data-line-number="49"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Proportion of 100 balls that were red&quot;</span>, <span class="dt">title =</span> <span class="st">&quot;100&quot;</span>) </a></code></pre></div>
 <p>For easy comparison, we present the three resulting histograms in a single row with matching x and y axes in Figure <a href="7-sampling.html#fig:comparing-sampling-distributions">7.12</a>.</p>
 <div class="figure" style="text-align: center"><span id="fig:comparing-sampling-distributions"></span>
-<img src="ModernDive_files/figure-html/comparing-sampling-distributions-1.png" alt="Comparing the distributions of proportion red for different sample sizes." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/comparing-sampling-distributions-1.png" alt="Comparing the distributions of proportion red for different sample sizes." width="\textwidth" />
 <p class="caption">
 FIGURE 7.12: Comparing the distributions of proportion red for different sample sizes.
 </p>
@@ -1203,7 +1173,7 @@ Standard deviation of proportions red
 <h3><span class="header-section-number">7.3.2</span> Statistical definitions</h3>
 <p>Now, for some important statistical definitions related to sampling. As a refresher of our 1000 repeated/replicated virtual samples of size <span class="math inline">\(n\)</span> = 25, <span class="math inline">\(n\)</span> = 50, and <span class="math inline">\(n\)</span> = 100 in Section <a href="7-sampling.html#sampling-simulation">7.2</a>, let’s display Figure <a href="7-sampling.html#fig:comparing-sampling-distributions">7.12</a> again as Figure <a href="7-sampling.html#fig:comparing-sampling-distributions-1b">7.13</a>.</p>
 <div class="figure" style="text-align: center"><span id="fig:comparing-sampling-distributions-1b"></span>
-<img src="ModernDive_files/figure-html/comparing-sampling-distributions-1b-1.png" alt="Previously seen three distributions of the sample proportion $\widehat{p}$." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/comparing-sampling-distributions-1b-1.png" alt="Previously seen three distributions of the sample proportion $\widehat{p}$." width="\textwidth" />
 <p class="caption">
 FIGURE 7.13: Previously seen three distributions of the sample proportion <span class="math inline">\(\widehat{p}\)</span>.
 </p>
@@ -1255,7 +1225,7 @@ Standard deviation of proportions red
 <p>Unfortunately, these names confuse many people who are new to statistical inference. For example, it’s common for people who are new to statistical inference to call the “sampling distribution” the “sample distribution.” Another additional source of confusion is the name “standard deviation” and “standard error.” Remember that a standard error is merely a <em>kind</em> of standard deviation: the standard deviation of any point estimate from sampling. In other words, all standard errors are standard deviations, but not every standard deviation is necessarily a standard error.</p>
 <p>To help reinforce these concepts, let’s re-display Figure <a href="7-sampling.html#fig:comparing-sampling-distributions">7.12</a> but using our new terminology, notation, and definitions relating to sampling in Figure <a href="7-sampling.html#fig:comparing-sampling-distributions-2">7.14</a>.</p>
 <div class="figure" style="text-align: center"><span id="fig:comparing-sampling-distributions-2"></span>
-<img src="ModernDive_files/figure-html/comparing-sampling-distributions-2-1.png" alt="Three sampling distributions of the sample proportion $\widehat{p}$." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/comparing-sampling-distributions-2-1.png" alt="Three sampling distributions of the sample proportion $\widehat{p}$." width="\textwidth" />
 <p class="caption">
 FIGURE 7.14: Three sampling distributions of the sample proportion <span class="math inline">\(\widehat{p}\)</span>.
 </p>
@@ -1329,7 +1299,7 @@ n = 100
 1     900        1500</code></pre>
 <p>Let’s re-display our sampling distributions from Figures <a href="7-sampling.html#fig:comparing-sampling-distributions">7.12</a> and <a href="7-sampling.html#fig:comparing-sampling-distributions-2">7.14</a>, but now with a vertical red line marking the true population proportion <span class="math inline">\(p\)</span> of balls that are red = 37.5% in Figure <a href="7-sampling.html#fig:comparing-sampling-distributions-3">7.15</a>. We see that while there is a certain amount of error in the sample proportions <span class="math inline">\(\widehat{p}\)</span> for all three sampling distributions, on average the <span class="math inline">\(\widehat{p}\)</span> are centered at the true population proportion red <span class="math inline">\(p\)</span>.</p>
 <div class="figure" style="text-align: center"><span id="fig:comparing-sampling-distributions-3"></span>
-<img src="ModernDive_files/figure-html/comparing-sampling-distributions-3-1.png" alt="Three sampling distributions with population proportion $p$ marked by vertical line." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/comparing-sampling-distributions-3-1.png" alt="Three sampling distributions with population proportion $p$ marked by vertical line." width="\textwidth" />
 <p class="caption">
 FIGURE 7.15: Three sampling distributions with population proportion <span class="math inline">\(p\)</span> marked by vertical line.
 </p>
@@ -1706,8 +1676,8 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/moderndive/moderndive_book/edit/master/07-sampling.Rmd",
-"text": "Edit"
+"link": null,
+"text": null
 },
 "history": {
 "link": null,

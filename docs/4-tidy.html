@@ -24,7 +24,7 @@
 <meta name="author" content="Chester Ismay and Albert Y. Kim   Foreword by Kelly S. McConville" />
 
 
-<meta name="date" content="2019-12-27" />
+<meta name="date" content="2019-12-28" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -59,16 +59,6 @@
 <script src="libs/moment-timezone-0.2.5/moment-timezone-with-data.js"></script>
 <script src="libs/moment-fquarter-1.0.0/moment-fquarter.min.js"></script>
 <script src="libs/dygraphs-binding-1.1.1.6/dygraphs.js"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-89938436-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 
 
 <style type="text/css">
@@ -149,23 +139,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul class="summary">
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome to ModernDive</a></li>
 <li class="chapter" data-level="" data-path="foreword.html"><a href="foreword.html"><i class="fa fa-check"></i>Foreword</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html"><i class="fa fa-check"></i>Preface</a><ul>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#introduction-for-students"><i class="fa fa-check"></i>Introduction for students</a><ul>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#what-we-hope-you-will-learn-from-this-book"><i class="fa fa-check"></i>What we hope you will learn from this book</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#datascience-pipeline"><i class="fa fa-check"></i>Data/science pipeline</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#reproducible-research"><i class="fa fa-check"></i>Reproducible research</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#final-note-for-students"><i class="fa fa-check"></i>Final note for students</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#introduction-for-instructors"><i class="fa fa-check"></i>Introduction for instructors</a><ul>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#resources"><i class="fa fa-check"></i>Resources</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#why-did-we-write-this-book"><i class="fa fa-check"></i>Why did we write this book?</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#who-is-this-book-for"><i class="fa fa-check"></i>Who is this book for?</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#connect-and-contribute"><i class="fa fa-check"></i>Connect and contribute</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#acknowledgements"><i class="fa fa-check"></i>Acknowledgements</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#about-this-book"><i class="fa fa-check"></i>About this book</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the authors</a></li>
 <li class="chapter" data-level="1" data-path="1-getting-started.html"><a href="1-getting-started.html"><i class="fa fa-check"></i><b>1</b> Getting Started with Data in R</a><ul>
 <li class="chapter" data-level="1.1" data-path="1-getting-started.html"><a href="1-getting-started.html#r-rstudio"><i class="fa fa-check"></i><b>1.1</b> What are R and RStudio?</a><ul>
 <li class="chapter" data-level="1.1.1" data-path="1-getting-started.html"><a href="1-getting-started.html#installing"><i class="fa fa-check"></i><b>1.1.1</b> Installing R and RStudio</a></li>
@@ -578,9 +551,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<html>
-<img src='https://moderndive.com/wide_format.png' alt="ModernDive">
-</html>
 <div id="tidy" class="section level1">
 <h1><span class="header-section-number">Chapter 4</span> Data Importing and “Tidy” Data</h1>
 <p>In Subsection <a href="1-getting-started.html#programming-concepts">1.2.1</a>, we introduced the concept of a  data frame in R: a rectangular spreadsheet-like representation of data where the rows correspond to observations and the columns correspond to variables describing each observation. In Section <a href="1-getting-started.html#nycflights13">1.4</a>, we started exploring our first data frame: the <code>flights</code> data frame included in the <code>nycflights13</code> package. In Chapter <a href="2-viz.html#viz">2</a>, we created visualizations based on the data included in <code>flights</code> and other data frames such as <code>weather</code>. In Chapter <a href="3-wrangling.html#wrangling">3</a>, we learned how to take existing data frames and transform/modify them to suit our ends.</p>
@@ -684,7 +654,7 @@ FIGURE 4.1: Importing an Excel file to R.
 4 USA            249    158    84</code></pre>
 <p>Let’s now ask ourselves a question: “Using the <code>drinks_smaller</code> data frame, how would we create the side-by-side barplot in Figure <a href="4-tidy.html#fig:drinks-smaller">4.2</a>?”. Recall we saw barplots displaying two categorical variables in Subsection <a href="2-viz.html#two-categ-barplot">2.8.3</a>.</p>
 <div class="figure" style="text-align: center"><span id="fig:drinks-smaller"></span>
-<img src="ModernDive_files/figure-html/drinks-smaller-1.png" alt="Comparing alcohol consumption in 4 countries." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/drinks-smaller-1.png" alt="Comparing alcohol consumption in 4 countries." width="\textwidth" />
 <p class="caption">
 FIGURE 4.2: Comparing alcohol consumption in 4 countries.
 </p>
@@ -988,7 +958,7 @@ Overcast
 <a class="sourceLine" id="cb129-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_col</span>(<span class="dt">position =</span> <span class="st">&quot;dodge&quot;</span>)</a></code></pre></div>
 
 <div class="figure" style="text-align: center"><span id="fig:drinks-smaller-tidy-barplot"></span>
-<img src="ModernDive_files/figure-html/drinks-smaller-tidy-barplot-1.png" alt="Comparing alcohol consumption in 4 countries using geom_col()." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/drinks-smaller-tidy-barplot-1.png" alt="Comparing alcohol consumption in 4 countries using geom_col()." width="\textwidth" />
 <p class="caption">
 FIGURE 4.4: Comparing alcohol consumption in 4 countries using geom_col().
 </p>
@@ -1089,7 +1059,7 @@ FIGURE 4.4: Comparing alcohol consumption in 4 countries using geom_col().
 <a class="sourceLine" id="cb137-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_line</span>() <span class="op">+</span></a>
 <a class="sourceLine" id="cb137-3" data-line-number="3"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Year&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Democracy Score&quot;</span>)</a></code></pre></div>
 <div class="figure" style="text-align: center"><span id="fig:guat-dem-tidy"></span>
-<img src="ModernDive_files/figure-html/guat-dem-tidy-1.png" alt="Democracy scores in Guatemala 1952-1992." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/guat-dem-tidy-1.png" alt="Democracy scores in Guatemala 1952-1992." width="\textwidth" />
 <p class="caption">
 FIGURE 4.5: Democracy scores in Guatemala 1952-1992.
 </p>
@@ -1223,8 +1193,8 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/moderndive/moderndive_book/edit/master/04-tidy.Rmd",
-"text": "Edit"
+"link": null,
+"text": null
 },
 "history": {
 "link": null,

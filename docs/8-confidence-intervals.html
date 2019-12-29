@@ -24,7 +24,7 @@
 <meta name="author" content="Chester Ismay and Albert Y. Kim   Foreword by Kelly S. McConville" />
 
 
-<meta name="date" content="2019-12-27" />
+<meta name="date" content="2019-12-28" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -59,16 +59,6 @@
 <script src="libs/moment-timezone-0.2.5/moment-timezone-with-data.js"></script>
 <script src="libs/moment-fquarter-1.0.0/moment-fquarter.min.js"></script>
 <script src="libs/dygraphs-binding-1.1.1.6/dygraphs.js"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-89938436-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 
 
 <style type="text/css">
@@ -149,23 +139,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul class="summary">
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome to ModernDive</a></li>
 <li class="chapter" data-level="" data-path="foreword.html"><a href="foreword.html"><i class="fa fa-check"></i>Foreword</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html"><i class="fa fa-check"></i>Preface</a><ul>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#introduction-for-students"><i class="fa fa-check"></i>Introduction for students</a><ul>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#what-we-hope-you-will-learn-from-this-book"><i class="fa fa-check"></i>What we hope you will learn from this book</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#datascience-pipeline"><i class="fa fa-check"></i>Data/science pipeline</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#reproducible-research"><i class="fa fa-check"></i>Reproducible research</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#final-note-for-students"><i class="fa fa-check"></i>Final note for students</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#introduction-for-instructors"><i class="fa fa-check"></i>Introduction for instructors</a><ul>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#resources"><i class="fa fa-check"></i>Resources</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#why-did-we-write-this-book"><i class="fa fa-check"></i>Why did we write this book?</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#who-is-this-book-for"><i class="fa fa-check"></i>Who is this book for?</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#connect-and-contribute"><i class="fa fa-check"></i>Connect and contribute</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#acknowledgements"><i class="fa fa-check"></i>Acknowledgements</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#about-this-book"><i class="fa fa-check"></i>About this book</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the authors</a></li>
 <li class="chapter" data-level="1" data-path="1-getting-started.html"><a href="1-getting-started.html"><i class="fa fa-check"></i><b>1</b> Getting Started with Data in R</a><ul>
 <li class="chapter" data-level="1.1" data-path="1-getting-started.html"><a href="1-getting-started.html#r-rstudio"><i class="fa fa-check"></i><b>1.1</b> What are R and RStudio?</a><ul>
 <li class="chapter" data-level="1.1.1" data-path="1-getting-started.html"><a href="1-getting-started.html#installing"><i class="fa fa-check"></i><b>1.1.1</b> Installing R and RStudio</a></li>
@@ -578,9 +551,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<html>
-<img src='https://moderndive.com/wide_format.png' alt="ModernDive">
-</html>
 <div id="confidence-intervals" class="section level1">
 <h1><span class="header-section-number">Chapter 8</span> Bootstrapping and Confidence Intervals</h1>
 <p>In Chapter <a href="7-sampling.html#sampling">7</a>, we studied sampling. We started with a “tactile” exercise where we wanted to know the proportion of balls in the sampling bowl in Figure <a href="7-sampling.html#fig:sampling-exercise-1">7.1</a> that are red. While we could have performed an exhaustive count, this would have been a tedious process. So instead, we used a shovel to extract a sample of 50 balls and used the resulting proportion that were red as an <em>estimate</em>. Furthermore, we made sure to mix the bowl’s contents before every use of the shovel. Because of the randomness created by the mixing, different uses of the shovel yielded different proportions red and hence different estimates of the proportion of the bowl’s balls that are red.</p>
@@ -650,7 +620,7 @@ FIGURE 8.2: 50 US pennies labelled.
 <div class="sourceCode" id="cb241"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb241-1" data-line-number="1"><span class="kw">ggplot</span>(pennies_sample, <span class="kw">aes</span>(<span class="dt">x =</span> year)) <span class="op">+</span></a>
 <a class="sourceLine" id="cb241-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth =</span> <span class="dv">10</span>, <span class="dt">color =</span> <span class="st">&quot;white&quot;</span>)</a></code></pre></div>
 <div class="figure" style="text-align: center"><span id="fig:pennies-sample-histogram"></span>
-<img src="ModernDive_files/figure-html/pennies-sample-histogram-1.png" alt="Distribution of year on 50 US pennies." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/pennies-sample-histogram-1.png" alt="Distribution of year on 50 US pennies." width="\textwidth" />
 <p class="caption">
 FIGURE 8.3: Distribution of year on 50 US pennies.
 </p>
@@ -789,7 +759,7 @@ FIGURE 8.8: 50 resampled US pennies labelled.
 <a class="sourceLine" id="cb245-6" data-line-number="6"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">title =</span> <span class="st">&quot;Original sample of 50 pennies&quot;</span>)</a></code></pre></div>
 
 <div class="figure" style="text-align: center"><span id="fig:origandresample"></span>
-<img src="ModernDive_files/figure-html/origandresample-1.png" alt="Comparing year in the resampled pennies_resample with the original sample pennies_sample." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/origandresample-1.png" alt="Comparing year in the resampled pennies_resample with the original sample pennies_sample." width="\textwidth" />
 <p class="caption">
 FIGURE 8.9: Comparing <code>year</code> in the resampled <code>pennies_resample</code> with the original sample <code>pennies_sample</code>.
 </p>
@@ -863,7 +833,7 @@ FIGURE 8.10: Snapshot of shared spreadsheet of resampled pennies.
 <a class="sourceLine" id="cb252-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth =</span> <span class="dv">1</span>, <span class="dt">color =</span> <span class="st">&quot;white&quot;</span>, <span class="dt">boundary =</span> <span class="dv">1990</span>) <span class="op">+</span></a>
 <a class="sourceLine" id="cb252-3" data-line-number="3"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Sampled mean year&quot;</span>)</a></code></pre></div>
 <div class="figure" style="text-align: center"><span id="fig:tactile-resampling-6"></span>
-<img src="ModernDive_files/figure-html/tactile-resampling-6-1.png" alt="Distribution of 35 sample means from 35 resamples." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/tactile-resampling-6-1.png" alt="Distribution of 35 sample means from 35 resamples." width="\textwidth" />
 <p class="caption">
 FIGURE 8.11: Distribution of 35 sample means from 35 resamples.
 </p>
@@ -969,14 +939,14 @@ Albert: We'll need to explain that command and why tidyverse opts for 3 sigfigs.
 <a class="sourceLine" id="cb263-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth =</span> <span class="dv">1</span>, <span class="dt">color =</span> <span class="st">&quot;white&quot;</span>, <span class="dt">boundary =</span> <span class="dv">1990</span>) <span class="op">+</span></a>
 <a class="sourceLine" id="cb263-3" data-line-number="3"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Resample mean year&quot;</span>)</a></code></pre></div>
 <div class="figure" style="text-align: center"><span id="fig:tactile-resampling-7"></span>
-<img src="ModernDive_files/figure-html/tactile-resampling-7-1.png" alt="Distribution of 35 sample means from 35 resamples." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/tactile-resampling-7-1.png" alt="Distribution of 35 sample means from 35 resamples." width="\textwidth" />
 <p class="caption">
 FIGURE 8.12: Distribution of 35 sample means from 35 resamples.
 </p>
 </div>
 <p>Let’s compare our virtually constructed bootstrap distribution with the one our 35 friends constructed via our tactile resampling exercise in Figure <a href="8-confidence-intervals.html#fig:orig-and-resample-means">8.13</a>. Observe how they are somewhat similar, but not identical.</p>
 <div class="figure" style="text-align: center"><span id="fig:orig-and-resample-means"></span>
-<img src="ModernDive_files/figure-html/orig-and-resample-means-1.png" alt="Comparing distributions of means from resamples." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/orig-and-resample-means-1.png" alt="Comparing distributions of means from resamples." width="\textwidth" />
 <p class="caption">
 FIGURE 8.13: Comparing distributions of means from resamples.
 </p>
@@ -1033,7 +1003,7 @@ FIGURE 8.13: Comparing distributions of means from resamples.
 <a class="sourceLine" id="cb267-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth =</span> <span class="dv">1</span>, <span class="dt">color =</span> <span class="st">&quot;white&quot;</span>, <span class="dt">boundary =</span> <span class="dv">1990</span>) <span class="op">+</span></a>
 <a class="sourceLine" id="cb267-3" data-line-number="3"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;sample mean&quot;</span>)</a></code></pre></div>
 <div class="figure" style="text-align: center"><span id="fig:one-thousand-sample-means"></span>
-<img src="ModernDive_files/figure-html/one-thousand-sample-means-1.png" alt="Bootstrap resampling distribution based on 1000 resamples." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/one-thousand-sample-means-1.png" alt="Bootstrap resampling distribution based on 1000 resamples." width="\textwidth" />
 <p class="caption">
 FIGURE 8.14: Bootstrap resampling distribution based on 1000 resamples.
 </p>
@@ -1087,7 +1057,7 @@ FIGURE 8.15: Analogy of difference between point estimates and confidence interv
 <p>Let’s mark these percentiles on the bootstrap distribution with vertical lines in Figure <a href="8-confidence-intervals.html#fig:percentile-method">8.16</a>. About 95% of the <code>mean_year</code> variable values in <code>virtual_resampled_means</code> fall between 1991.059 and 1999.283, with 2.5% to the left of the leftmost line and 2.5% to the right of the rightmost line.</p>
 
 <div class="figure" style="text-align: center"><span id="fig:percentile-method"></span>
-<img src="ModernDive_files/figure-html/percentile-method-1.png" alt="Percentile method 95% confidence interval. Interval endpoints marked by vertical lines." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/percentile-method-1.png" alt="Percentile method 95% confidence interval. Interval endpoints marked by vertical lines." width="\textwidth" />
 <p class="caption">
 FIGURE 8.16: Percentile method 95% confidence interval. Interval endpoints marked by vertical lines.
 </p>
@@ -1115,7 +1085,7 @@ FIGURE 8.16: Percentile method 95% confidence interval. Interval endpoints marke
 <p>Let’s now add the SE method confidence interval with dashed lines in Figure <a href="8-confidence-intervals.html#fig:percentile-and-se-method">8.17</a>.</p>
 
 <div class="figure" style="text-align: center"><span id="fig:percentile-and-se-method"></span>
-<img src="ModernDive_files/figure-html/percentile-and-se-method-1.png" alt="Comparing two 95% confidence interval methods." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/percentile-and-se-method-1.png" alt="Comparing two 95% confidence interval methods." width="\textwidth" />
 <p class="caption">
 FIGURE 8.17: Comparing two 95% confidence interval methods.
 </p>
@@ -1319,7 +1289,7 @@ FIGURE 8.21: Diagram of visualize() results.
 <p>The <code>visualize()</code>  verb provides a quick way to visualize the bootstrap distribution as a histogram of the numerical <code>stat</code> variable’s values. The pipeline of the main <code>infer</code> verbs used for exploring bootstrap distribution results is shown in Figure <a href="8-confidence-intervals.html#fig:infer-visualize">8.21</a>.</p>
 <div class="sourceCode" id="cb286"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb286-1" data-line-number="1"><span class="kw">visualize</span>(bootstrap_distribution)</a></code></pre></div>
 <div class="figure" style="text-align: center"><span id="fig:boostrap-distribution-infer"></span>
-<img src="ModernDive_files/figure-html/boostrap-distribution-infer-1.png" alt="Bootstrap distribution." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/boostrap-distribution-infer-1.png" alt="Bootstrap distribution." width="\textwidth" />
 <p class="caption">
 FIGURE 8.22: Bootstrap distribution.
 </p>
@@ -1356,7 +1326,7 @@ FIGURE 8.23: infer package workflow for confidence intervals.
 <a class="sourceLine" id="cb290-2" data-line-number="2"><span class="st">  </span><span class="kw">shade_confidence_interval</span>(<span class="dt">endpoints =</span> percentile_ci)</a></code></pre></div>
 
 <div class="figure" style="text-align: center"><span id="fig:percentile-ci-viz"></span>
-<img src="ModernDive_files/figure-html/percentile-ci-viz-1.png" alt="Percentile method 95% confidence interval shaded corresponding to potential values." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/percentile-ci-viz-1.png" alt="Percentile method 95% confidence interval shaded corresponding to potential values." width="\textwidth" />
 <p class="caption">
 FIGURE 8.24: Percentile method 95% confidence interval shaded corresponding to potential values.
 </p>
@@ -1390,7 +1360,7 @@ FIGURE 8.24: Percentile method 95% confidence interval shaded corresponding to p
 <div class="sourceCode" id="cb296"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb296-1" data-line-number="1"><span class="kw">visualize</span>(bootstrap_distribution) <span class="op">+</span><span class="st"> </span></a>
 <a class="sourceLine" id="cb296-2" data-line-number="2"><span class="st">  </span><span class="kw">shade_confidence_interval</span>(<span class="dt">endpoints =</span> standard_error_ci)</a></code></pre></div>
 <div class="figure" style="text-align: center"><span id="fig:se-ci-viz"></span>
-<img src="ModernDive_files/figure-html/se-ci-viz-1.png" alt="Standard-error-method 95% confidence interval." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/se-ci-viz-1.png" alt="Standard-error-method 95% confidence interval." width="\textwidth" />
 <p class="caption">
 FIGURE 8.25: Standard-error-method 95% confidence interval.
 </p>
@@ -1536,7 +1506,7 @@ argument in `specify()`.</code></pre>
 <a class="sourceLine" id="cb311-3" data-line-number="3"><span class="st">  </span><span class="kw">shade_confidence_interval</span>(<span class="dt">endpoints =</span> percentile_ci_<span class="dv">1</span>) <span class="op">+</span></a>
 <a class="sourceLine" id="cb311-4" data-line-number="4"><span class="st">  </span><span class="kw">geom_vline</span>(<span class="dt">xintercept =</span> <span class="fl">0.375</span>, <span class="dt">linetype =</span> <span class="st">&quot;dashed&quot;</span>)</a></code></pre></div>
 <div class="figure" style="text-align: center"><span id="fig:shovel-bootstrap-1-infer"></span>
-<img src="ModernDive_files/figure-html/shovel-bootstrap-1-infer-1.png" alt="Bootstrap distribution." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/shovel-bootstrap-1-infer-1.png" alt="Bootstrap distribution." width="\textwidth" />
 <p class="caption">
 FIGURE 8.26: Bootstrap distribution.
 </p>
@@ -1600,7 +1570,7 @@ FIGURE 8.26: Bootstrap distribution.
 </ol>
 
 <div class="figure" style="text-align: center"><span id="fig:reliable-percentile"></span>
-<img src="ModernDive_files/figure-html/reliable-percentile-1.png" alt="100 percentile-based 95% confidence intervals for \(p\)." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/reliable-percentile-1.png" alt="100 percentile-based 95% confidence intervals for \(p\)." width="\textwidth" />
 <p class="caption">
 FIGURE 8.27: 100 percentile-based 95% confidence intervals for <span class="math inline">\(p\)</span>.
 </p>
@@ -1611,7 +1581,7 @@ FIGURE 8.27: 100 percentile-based 95% confidence intervals for <span class="math
 <p>To further accentuate our point about confidence levels, let’s generate a figure similar to Figure <a href="8-confidence-intervals.html#fig:reliable-percentile">8.27</a>, but this time constructing 80% standard-error method based confidence intervals instead. Let’s visualize the results in Figure <a href="8-confidence-intervals.html#fig:reliable-se">8.28</a> with the scale on the x-axis being the same as in Figure <a href="8-confidence-intervals.html#fig:reliable-percentile">8.27</a> to make comparison easy. Furthermore, since all standard-error method 95% confidence intervals for <span class="math inline">\(p\)</span> are centered at their respective point estimates <span class="math inline">\(\widehat{p}\)</span>, we mark this value on each line with dots.</p>
 
 <div class="figure" style="text-align: center"><span id="fig:reliable-se"></span>
-<img src="ModernDive_files/figure-html/reliable-se-1.png" alt="100 SE-based 80% confidence intervals for \(p\) with point estimate center marked with dots." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/reliable-se-1.png" alt="100 SE-based 80% confidence intervals for \(p\) with point estimate center marked with dots." width="\textwidth" />
 <p class="caption">
 FIGURE 8.28: 100 SE-based 80% confidence intervals for <span class="math inline">\(p\)</span> with point estimate center marked with dots.
 </p>
@@ -1671,7 +1641,7 @@ We see that the sample proportion of reds varies in the `point_estimate` column 
 -->
 
 <div class="figure" style="text-align: center"><span id="fig:reliable-percentile-80-95-99"></span>
-<img src="ModernDive_files/figure-html/reliable-percentile-80-95-99-1.png" alt="Ten 80, 95, and 99% confidence intervals for \(p\) based on \(n = 50\)." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/reliable-percentile-80-95-99-1.png" alt="Ten 80, 95, and 99% confidence intervals for \(p\) based on \(n = 50\)." width="\textwidth" />
 <p class="caption">
 FIGURE 8.29: Ten 80, 95, and 99% confidence intervals for <span class="math inline">\(p\)</span> based on <span class="math inline">\(n = 50\)</span>.
 </p>
@@ -1726,7 +1696,7 @@ Mean width
 <p>This time, let’s fix the confidence level at 95%, but consider three different sample sizes for <span class="math inline">\(n\)</span>: 25, 50, and 100. Specifically, we’ll first take 10 different random samples of size 25, 10 different random samples of size 50, and 10 different random samples of size 100. We’ll then construct 95% percentile-based confidence intervals for each sample. Finally, we’ll compare the widths of these intervals. We visualize the resulting 30 confidence intervals in Figure <a href="8-confidence-intervals.html#fig:reliable-percentile-n-25-50-100">8.30</a>. Note also the vertical line marking the true value of <span class="math inline">\(p\)</span> = 0.375.</p>
 
 <div class="figure" style="text-align: center"><span id="fig:reliable-percentile-n-25-50-100"></span>
-<img src="ModernDive_files/figure-html/reliable-percentile-n-25-50-100-1.png" alt="Ten 95% confidence intervals for \(p\) with \(n = 25, 50,\) and \(100\)." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/reliable-percentile-n-25-50-100-1.png" alt="Ten 95% confidence intervals for \(p\) with \(n = 25, 50,\) and \(100\)." width="\textwidth" />
 <p class="caption">
 FIGURE 8.30: Ten 95% confidence intervals for <span class="math inline">\(p\)</span> with <span class="math inline">\(n = 25, 50,\)</span> and <span class="math inline">\(100\)</span>.
 </p>
@@ -2045,7 +2015,7 @@ subtract the levels of the explanatory variable.</code></pre>
 <div class="sourceCode" id="cb336"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb336-1" data-line-number="1"><span class="kw">visualize</span>(bootstrap_distribution_yawning) <span class="op">+</span></a>
 <a class="sourceLine" id="cb336-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_vline</span>(<span class="dt">xintercept =</span> <span class="dv">0</span>)</a></code></pre></div>
 <div class="figure" style="text-align: center"><span id="fig:bootstrap-distribution-mythbusters"></span>
-<img src="ModernDive_files/figure-html/bootstrap-distribution-mythbusters-1.png" alt="Bootstrap distribution." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/bootstrap-distribution-mythbusters-1.png" alt="Bootstrap distribution." width="\textwidth" />
 <p class="caption">
 FIGURE 8.31: Bootstrap distribution.
 </p>
@@ -2078,7 +2048,7 @@ FIGURE 8.31: Bootstrap distribution.
 1 -0.227291 0.315526</code></pre>
 <p>Let’s visualize both confidence intervals in Figure <a href="8-confidence-intervals.html#fig:bootstrap-distribution-mythbusters-CI">8.32</a>, with the percentile-method interval marked with black lines and the standard-error-method marked with grey lines. Observe that they are both similar to each other.</p>
 <div class="figure" style="text-align: center"><span id="fig:bootstrap-distribution-mythbusters-CI"></span>
-<img src="ModernDive_files/figure-html/bootstrap-distribution-mythbusters-CI-1.png" alt="Two 95\% confidence intervals: percentile method (black) and standard error method (grey)." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/bootstrap-distribution-mythbusters-CI-1.png" alt="Two 95\% confidence intervals: percentile method (black) and standard error method (grey)." width="\textwidth" />
 <p class="caption">
 FIGURE 8.32: Two 95% confidence intervals: percentile method (black) and standard error method (grey).
 </p>
@@ -2132,7 +2102,7 @@ Furthermore, if the 50 participants were randomly allocated to the `"seed"` and 
 <a class="sourceLine" id="cb343-12" data-line-number="12"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Proportion of 50 balls that were red&quot;</span>, </a>
 <a class="sourceLine" id="cb343-13" data-line-number="13">       <span class="dt">title =</span> <span class="st">&quot;Sampling distribution&quot;</span>)</a></code></pre></div>
 <div class="figure" style="text-align: center"><span id="fig:sampling-distribution-part-deux"></span>
-<img src="ModernDive_files/figure-html/sampling-distribution-part-deux-1.png" alt="Previously seen sampling distribution of sample proportion red for $n = 1000$." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/sampling-distribution-part-deux-1.png" alt="Previously seen sampling distribution of sample proportion red for $n = 1000$." width="\textwidth" />
 <p class="caption">
 FIGURE 8.33: Previously seen sampling distribution of sample proportion red for <span class="math inline">\(n = 1000\)</span>.
 </p>
@@ -2153,7 +2123,7 @@ FIGURE 8.33: Previously seen sampling distribution of sample proportion red for 
 <a class="sourceLine" id="cb346-3" data-line-number="3"><span class="st">  </span><span class="kw">generate</span>(<span class="dt">reps =</span> <span class="dv">1000</span>, <span class="dt">type =</span> <span class="st">&quot;bootstrap&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span></a>
 <a class="sourceLine" id="cb346-4" data-line-number="4"><span class="st">  </span><span class="kw">calculate</span>(<span class="dt">stat =</span> <span class="st">&quot;prop&quot;</span>)</a></code></pre></div>
 <div class="figure" style="text-align: center"><span id="fig:bootstrap-distribution-part-deux"></span>
-<img src="ModernDive_files/figure-html/bootstrap-distribution-part-deux-1.png" alt="Bootstrap distribution of proportion red for $n = 1000$." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/bootstrap-distribution-part-deux-1.png" alt="Bootstrap distribution of proportion red for $n = 1000$." width="\textwidth" />
 <p class="caption">
 FIGURE 8.34: Bootstrap distribution of proportion red for <span class="math inline">\(n = 1000\)</span>.
 </p>
@@ -2172,7 +2142,7 @@ FIGURE 8.34: Bootstrap distribution of proportion red for <span class="math inli
 <li>To the bootstrap distribution on the bottom: a dashed line at the sample proportion <span class="math inline">\(\widehat{p}\)</span> = 21/50 = 0.42 = 42% that Ilyas and Yohan observed.</li>
 </ol>
 <div class="figure" style="text-align: center"><span id="fig:side-by-side"></span>
-<img src="ModernDive_files/figure-html/side-by-side-1.png" alt="Comparing the sampling and bootstrap distributions of $\widehat{p}$." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/side-by-side-1.png" alt="Comparing the sampling and bootstrap distributions of $\widehat{p}$." width="\textwidth" />
 <p class="caption">
 FIGURE 8.35: Comparing the sampling and bootstrap distributions of <span class="math inline">\(\widehat{p}\)</span>.
 </p>
@@ -2364,7 +2334,7 @@ Formula approximation
 # … with 23 more rows</code></pre>
 <p>In Figure <a href="8-confidence-intervals.html#fig:tactile-conf-int">8.36</a>, let’s plot the 33 confidence intervals for <span class="math inline">\(p\)</span> saved in <code>conf_ints</code> along with a vertical line at <span class="math inline">\(p\)</span> = 0.375 indicating the true proportion of the <code>bowl</code>’s balls that are red. Furthermore, let’s mark the sample proportions <span class="math inline">\(\widehat{p}\)</span> with dots since they represent the centers of these confidence intervals.</p>
 <div class="figure" style="text-align: center"><span id="fig:tactile-conf-int"></span>
-<img src="ModernDive_files/figure-html/tactile-conf-int-1.png" alt="33 confidence intervals at the 95\% level based on 33 tactile samples of size $n = 50$." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/tactile-conf-int-1.png" alt="33 confidence intervals at the 95\% level based on 33 tactile samples of size $n = 50$." width="\textwidth" />
 <p class="caption">
 FIGURE 8.36: 33 confidence intervals at the 95% level based on 33 tactile samples of size <span class="math inline">\(n = 50\)</span>.
 </p>
@@ -2474,8 +2444,8 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/moderndive/moderndive_book/edit/master/08-confidence-intervals.Rmd",
-"text": "Edit"
+"link": null,
+"text": null
 },
 "history": {
 "link": null,

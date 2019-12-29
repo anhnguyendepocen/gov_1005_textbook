@@ -24,7 +24,7 @@
 <meta name="author" content="Chester Ismay and Albert Y. Kim   Foreword by Kelly S. McConville" />
 
 
-<meta name="date" content="2019-12-27" />
+<meta name="date" content="2019-12-28" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -59,16 +59,6 @@
 <script src="libs/moment-timezone-0.2.5/moment-timezone-with-data.js"></script>
 <script src="libs/moment-fquarter-1.0.0/moment-fquarter.min.js"></script>
 <script src="libs/dygraphs-binding-1.1.1.6/dygraphs.js"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-89938436-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 
 
 <style type="text/css">
@@ -149,23 +139,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul class="summary">
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome to ModernDive</a></li>
 <li class="chapter" data-level="" data-path="foreword.html"><a href="foreword.html"><i class="fa fa-check"></i>Foreword</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html"><i class="fa fa-check"></i>Preface</a><ul>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#introduction-for-students"><i class="fa fa-check"></i>Introduction for students</a><ul>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#what-we-hope-you-will-learn-from-this-book"><i class="fa fa-check"></i>What we hope you will learn from this book</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#datascience-pipeline"><i class="fa fa-check"></i>Data/science pipeline</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#reproducible-research"><i class="fa fa-check"></i>Reproducible research</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#final-note-for-students"><i class="fa fa-check"></i>Final note for students</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#introduction-for-instructors"><i class="fa fa-check"></i>Introduction for instructors</a><ul>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#resources"><i class="fa fa-check"></i>Resources</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#why-did-we-write-this-book"><i class="fa fa-check"></i>Why did we write this book?</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#who-is-this-book-for"><i class="fa fa-check"></i>Who is this book for?</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#connect-and-contribute"><i class="fa fa-check"></i>Connect and contribute</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#acknowledgements"><i class="fa fa-check"></i>Acknowledgements</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#about-this-book"><i class="fa fa-check"></i>About this book</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the authors</a></li>
 <li class="chapter" data-level="1" data-path="1-getting-started.html"><a href="1-getting-started.html"><i class="fa fa-check"></i><b>1</b> Getting Started with Data in R</a><ul>
 <li class="chapter" data-level="1.1" data-path="1-getting-started.html"><a href="1-getting-started.html#r-rstudio"><i class="fa fa-check"></i><b>1.1</b> What are R and RStudio?</a><ul>
 <li class="chapter" data-level="1.1.1" data-path="1-getting-started.html"><a href="1-getting-started.html#installing"><i class="fa fa-check"></i><b>1.1.1</b> Installing R and RStudio</a></li>
@@ -578,9 +551,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<html>
-<img src='https://moderndive.com/wide_format.png' alt="ModernDive">
-</html>
 <div id="regression" class="section level1">
 <h1><span class="header-section-number">Chapter 5</span> Basic Regression</h1>
 <p>Now that we are equipped with data visualization skills from Chapter <a href="2-viz.html#viz">2</a>, data wrangling skills from Chapter <a href="3-wrangling.html#wrangling">3</a>, and an understanding of how to import data and the concept of a “tidy” data format from Chapter <a href="4-tidy.html#tidy">4</a>, let’s now proceed with data modeling. The fundamental premise of data modeling is to make explicit the relationship between:</p>
@@ -806,7 +776,7 @@ instead.
 </ul>
 <p>Figure <a href="5-regression.html#fig:correlation1">5.1</a> gives examples of 9 different correlation coefficient values for hypothetical numerical variables <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>. For example, observe in the top right plot that for a correlation coefficient of -0.75 there is a negative linear relationship between <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>, but it is not as strong as the negative linear relationship between <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> when the correlation coefficient is -0.9 or -1.</p>
 <div class="figure" style="text-align: center"><span id="fig:correlation1"></span>
-<img src="ModernDive_files/figure-html/correlation1-1.png" alt="Nine different correlation coefficients." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/correlation1-1.png" alt="Nine different correlation coefficients." width="\textwidth" />
 <p class="caption">
 FIGURE 5.1: Nine different correlation coefficients.
 </p>
@@ -830,7 +800,7 @@ FIGURE 5.1: Nine different correlation coefficients.
 <a class="sourceLine" id="cb153-4" data-line-number="4">       <span class="dt">y =</span> <span class="st">&quot;Teaching Score&quot;</span>,</a>
 <a class="sourceLine" id="cb153-5" data-line-number="5">       <span class="dt">title =</span> <span class="st">&quot;Scatterplot of relationship of teaching and beauty scores&quot;</span>)</a></code></pre></div>
 <div class="figure" style="text-align: center"><span id="fig:numxplot1"></span>
-<img src="ModernDive_files/figure-html/numxplot1-1.png" alt="Instructor evaluation scores at UT Austin." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/numxplot1-1.png" alt="Instructor evaluation scores at UT Austin." width="\textwidth" />
 <p class="caption">
 FIGURE 5.2: Instructor evaluation scores at UT Austin.
 </p>
@@ -842,7 +812,7 @@ FIGURE 5.2: Instructor evaluation scores at UT Austin.
 <a class="sourceLine" id="cb154-3" data-line-number="3"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Beauty Score&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Teaching Score&quot;</span>,</a>
 <a class="sourceLine" id="cb154-4" data-line-number="4">       <span class="dt">title =</span> <span class="st">&quot;Scatterplot of relationship of teaching and beauty scores&quot;</span>)</a></code></pre></div>
 <div class="figure" style="text-align: center"><span id="fig:numxplot2"></span>
-<img src="ModernDive_files/figure-html/numxplot2-1.png" alt="Instructor evaluation scores at UT Austin." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/numxplot2-1.png" alt="Instructor evaluation scores at UT Austin." width="\textwidth" />
 <p class="caption">
 FIGURE 5.3: Instructor evaluation scores at UT Austin.
 </p>
@@ -855,7 +825,7 @@ FIGURE 5.3: Instructor evaluation scores at UT Austin.
 <a class="sourceLine" id="cb155-4" data-line-number="4">       <span class="dt">title =</span> <span class="st">&quot;Relationship between teaching and beauty scores&quot;</span>) <span class="op">+</span><span class="st">  </span></a>
 <a class="sourceLine" id="cb155-5" data-line-number="5"><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="dt">se =</span> <span class="ot">FALSE</span>)</a></code></pre></div>
 <div class="figure" style="text-align: center"><span id="fig:numxplot3"></span>
-<img src="ModernDive_files/figure-html/numxplot3-1.png" alt="Regression line." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/numxplot3-1.png" alt="Regression line." width="\textwidth" />
 <p class="caption">
 FIGURE 5.4: Regression line.
 </p>
@@ -1066,7 +1036,7 @@ age
 <li>Arrow: The length of this arrow is the <em>residual</em>  and is computed by subtracting the fitted value <span class="math inline">\(\widehat{y}\)</span> from the observed value <span class="math inline">\(y\)</span>. The residual can be thought of as a model’s error or “lack of fit” for a particular observation. In the case of this course’s instructor, it is <span class="math inline">\(y - \widehat{y}\)</span> = 4.9 - 4.369 = 0.531.</li>
 </ul>
 <div class="figure" style="text-align: center"><span id="fig:numxplot4"></span>
-<img src="ModernDive_files/figure-html/numxplot4-1.png" alt="Example of observed value, fitted value, and residual." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/numxplot4-1.png" alt="Example of observed value, fitted value, and residual." width="\textwidth" />
 <p class="caption">
 FIGURE 5.6: Example of observed value, fitted value, and residual.
 </p>
@@ -1356,7 +1326,7 @@ Europe
 <a class="sourceLine" id="cb165-3" data-line-number="3"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Life expectancy&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Number of countries&quot;</span>,</a>
 <a class="sourceLine" id="cb165-4" data-line-number="4">       <span class="dt">title =</span> <span class="st">&quot;Histogram of distribution of worldwide life expectancies&quot;</span>)</a></code></pre></div>
 <div class="figure" style="text-align: center"><span id="fig:lifeExp2007hist"></span>
-<img src="ModernDive_files/figure-html/lifeExp2007hist-1.png" alt="Histogram of life expectancy in 2007." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/lifeExp2007hist-1.png" alt="Histogram of life expectancy in 2007." width="\textwidth" />
 <p class="caption">
 FIGURE 5.7: Histogram of life expectancy in 2007.
 </p>
@@ -1370,7 +1340,7 @@ FIGURE 5.7: Histogram of life expectancy in 2007.
 <a class="sourceLine" id="cb166-5" data-line-number="5">       <span class="dt">title =</span> <span class="st">&quot;Histogram of distribution of worldwide life expectancies&quot;</span>) <span class="op">+</span></a>
 <a class="sourceLine" id="cb166-6" data-line-number="6"><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>continent, <span class="dt">nrow =</span> <span class="dv">2</span>)</a></code></pre></div>
 <div class="figure" style="text-align: center"><span id="fig:catxplot0b"></span>
-<img src="ModernDive_files/figure-html/catxplot0b-1.png" alt="Life expectancy in 2007." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/catxplot0b-1.png" alt="Life expectancy in 2007." width="\textwidth" />
 <p class="caption">
 FIGURE 5.8: Life expectancy in 2007.
 </p>
@@ -1382,7 +1352,7 @@ FIGURE 5.8: Life expectancy in 2007.
 <a class="sourceLine" id="cb167-3" data-line-number="3"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Continent&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Life expectancy&quot;</span>,</a>
 <a class="sourceLine" id="cb167-4" data-line-number="4">       <span class="dt">title =</span> <span class="st">&quot;Life expectancy by continent&quot;</span>)</a></code></pre></div>
 <div class="figure" style="text-align: center"><span id="fig:catxplot1"></span>
-<img src="ModernDive_files/figure-html/catxplot1-1.png" alt="Life expectancy in 2007." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/catxplot1-1.png" alt="Life expectancy in 2007." width="\textwidth" />
 <p class="caption">
 FIGURE 5.9: Life expectancy in 2007.
 </p>
@@ -2060,7 +2030,7 @@ FIGURE 5.11: Causal graph.
 <h3><span class="header-section-number">5.3.2</span> Best-fitting line</h3>
 <p>Regression lines are also known as “best-fitting” lines. But what do we mean by “best”? Let’s unpack the criteria that is used in regression to determine “best.” Recall Figure <a href="5-regression.html#fig:numxplot4">5.6</a>, where for an instructor with a beauty score of <span class="math inline">\(x = 7.333\)</span> we mark the <em>observed value</em> <span class="math inline">\(y\)</span> with a circle, the <em>fitted value</em> <span class="math inline">\(\widehat{y}\)</span> with a square, and the <em>residual</em> <span class="math inline">\(y - \widehat{y}\)</span> with an arrow. We re-display Figure <a href="5-regression.html#fig:numxplot4">5.6</a> in the top-left plot of Figure <a href="5-regression.html#fig:best-fitting-line">5.12</a> in addition to three more arbitrarily chosen course instructors:</p>
 <div class="figure" style="text-align: center"><span id="fig:best-fitting-line"></span>
-<img src="ModernDive_files/figure-html/best-fitting-line-1.png" alt="Example of observed value, fitted value, and residual." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/best-fitting-line-1.png" alt="Example of observed value, fitted value, and residual." width="\textwidth" />
 <p class="caption">
 FIGURE 5.12: Example of observed value, fitted value, and residual.
 </p>
@@ -2120,7 +2090,7 @@ FIGURE 5.12: Example of observed value, fitted value, and residual.
 <li>Another arbitrarily chosen dashed green line</li>
 </ul>
 <div class="figure" style="text-align: center"><span id="fig:three-lines"></span>
-<img src="ModernDive_files/figure-html/three-lines-1.png" alt="Regression line and two others." width="85%" />
+<img src="Bayesian-Data-Science_files/figure-html/three-lines-1.png" alt="Regression line and two others." width="85%" />
 <p class="caption">
 FIGURE 5.13: Regression line and two others.
 </p>
@@ -2568,8 +2538,8 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/moderndive/moderndive_book/edit/master/05-regression.Rmd",
-"text": "Edit"
+"link": null,
+"text": null
 },
 "history": {
 "link": null,

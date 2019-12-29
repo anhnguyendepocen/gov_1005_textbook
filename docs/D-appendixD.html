@@ -24,7 +24,7 @@
 <meta name="author" content="Chester Ismay and Albert Y. Kim   Foreword by Kelly S. McConville" />
 
 
-<meta name="date" content="2019-12-27" />
+<meta name="date" content="2019-12-28" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -59,16 +59,6 @@
 <script src="libs/moment-timezone-0.2.5/moment-timezone-with-data.js"></script>
 <script src="libs/moment-fquarter-1.0.0/moment-fquarter.min.js"></script>
 <script src="libs/dygraphs-binding-1.1.1.6/dygraphs.js"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-89938436-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 
 
 <style type="text/css">
@@ -149,23 +139,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul class="summary">
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome to ModernDive</a></li>
 <li class="chapter" data-level="" data-path="foreword.html"><a href="foreword.html"><i class="fa fa-check"></i>Foreword</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html"><i class="fa fa-check"></i>Preface</a><ul>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#introduction-for-students"><i class="fa fa-check"></i>Introduction for students</a><ul>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#what-we-hope-you-will-learn-from-this-book"><i class="fa fa-check"></i>What we hope you will learn from this book</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#datascience-pipeline"><i class="fa fa-check"></i>Data/science pipeline</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#reproducible-research"><i class="fa fa-check"></i>Reproducible research</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#final-note-for-students"><i class="fa fa-check"></i>Final note for students</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#introduction-for-instructors"><i class="fa fa-check"></i>Introduction for instructors</a><ul>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#resources"><i class="fa fa-check"></i>Resources</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#why-did-we-write-this-book"><i class="fa fa-check"></i>Why did we write this book?</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#who-is-this-book-for"><i class="fa fa-check"></i>Who is this book for?</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#connect-and-contribute"><i class="fa fa-check"></i>Connect and contribute</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#acknowledgements"><i class="fa fa-check"></i>Acknowledgements</a></li>
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#about-this-book"><i class="fa fa-check"></i>About this book</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the authors</a></li>
 <li class="chapter" data-level="1" data-path="1-getting-started.html"><a href="1-getting-started.html"><i class="fa fa-check"></i><b>1</b> Getting Started with Data in R</a><ul>
 <li class="chapter" data-level="1.1" data-path="1-getting-started.html"><a href="1-getting-started.html#r-rstudio"><i class="fa fa-check"></i><b>1.1</b> What are R and RStudio?</a><ul>
 <li class="chapter" data-level="1.1.1" data-path="1-getting-started.html"><a href="1-getting-started.html#installing"><i class="fa fa-check"></i><b>1.1.1</b> Installing R and RStudio</a></li>
@@ -578,9 +551,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<html>
-<img src='https://moderndive.com/wide_format.png' alt="ModernDive">
-</html>
 <div id="appendixD" class="section level1">
 <h1><span class="header-section-number">D</span> Learning Check Solutions</h1>
 <!-- Albert will make sure the exercises here match up with exercises in the
@@ -652,7 +622,7 @@ reordering of the book. -->
 <p><strong>Solution</strong>: Many possibilities for this one, see the plot below. Is there a pattern in departure delay depending on when the flight is scheduled to depart? Interestingly, there seems to be only two blocks of time where flights depart.</p>
 <div class="sourceCode" id="cb575"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb575-1" data-line-number="1"><span class="kw">ggplot</span>(<span class="dt">data =</span> alaska_flights, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> dep_time, <span class="dt">y =</span> dep_delay)) <span class="op">+</span></a>
 <a class="sourceLine" id="cb575-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_point</span>()</a></code></pre></div>
-<p><img src="ModernDive_files/figure-html/unnamed-chunk-551-1.png" width="\textwidth" style="display: block; margin: auto;" /></p>
+<p><img src="Bayesian-Data-Science_files/figure-html/unnamed-chunk-550-1.png" width="\textwidth" style="display: block; margin: auto;" /></p>
 <p><strong>(LC2.7)</strong> Why is setting the <code>alpha</code> argument value useful with scatterplots? What further information does it give you that a regular scatterplot cannot?</p>
 <p><strong>Solution</strong>: It thins out the points so we address overplotting. But more importantly it hints at the (statistical) <strong>density</strong> and <strong>distribution</strong> of the points: where are the points concentrated, where do they occur.</p>
 <p><strong>(LC2.8)</strong> After viewing the Figure <a href="2-viz.html#fig:alpha">2.4</a> above, give an approximate range of arrival delays and departure delays that occur the most frequently. How has that region changed compared to when you observed the same plot without the <code>alpha = 0.2</code> set in Figure <a href="2-viz.html#fig:noalpha">2.2</a>?</p>
@@ -669,7 +639,7 @@ reordering of the book. -->
 <p><strong>Solution</strong>: Humidity is a good one to look at, since this very closely related to the cycles of a day.</p>
 <div class="sourceCode" id="cb576"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb576-1" data-line-number="1"><span class="kw">ggplot</span>(<span class="dt">data =</span> early_january_weather, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> time_hour, <span class="dt">y =</span> humid)) <span class="op">+</span></a>
 <a class="sourceLine" id="cb576-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_line</span>()</a></code></pre></div>
-<p><img src="ModernDive_files/figure-html/unnamed-chunk-552-1.png" width="\textwidth" style="display: block; margin: auto;" /></p>
+<p><img src="Bayesian-Data-Science_files/figure-html/unnamed-chunk-551-1.png" width="\textwidth" style="display: block; margin: auto;" /></p>
 <p><strong>(LC2.14)</strong> What does changing the number of bins from 30 to 40 tell us about the distribution of temperatures?</p>
 <p><strong>Solution</strong>: The distribution doesn’t change much. But by refining the bin width, we see that the temperature data has a high degree of accuracy. What do I mean by accuracy? Looking at the <code>temp</code> variable by <code>View(weather)</code>, we see that the precision of each temperature recording is 2 decimal places.</p>
 <p><strong>(LC2.15)</strong> Would you classify the distribution of temperatures as symmetric or skewed?</p>
@@ -2495,7 +2465,7 @@ $ age     &lt;int&gt; 36, 36, 36, 36, 59, 59, 59, 51, 51, 40, 40, 40, 40, 40, 40
 <a class="sourceLine" id="cb646-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
 <a class="sourceLine" id="cb646-3" data-line-number="3"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Age&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Teaching Score&quot;</span>,</a>
 <a class="sourceLine" id="cb646-4" data-line-number="4">       <span class="dt">title =</span> <span class="st">&quot;Scatterplot of relationship of teaching score and age&quot;</span>)</a></code></pre></div>
-<p><img src="ModernDive_files/figure-html/unnamed-chunk-598-1.png" width="\textwidth" style="display: block; margin: auto;" /></p>
+<p><img src="Bayesian-Data-Science_files/figure-html/unnamed-chunk-597-1.png" width="\textwidth" style="display: block; margin: auto;" /></p>
 <!--
 TODO: Albert needs to double check interpretation:
 -->
@@ -2586,7 +2556,7 @@ $ gdpPercap &lt;dbl&gt; 975, 5937, 6223, 4797, 12779, 34435, 36126, 29796, 1391,
 <a class="sourceLine" id="cb655-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_boxplot</span>() <span class="op">+</span></a>
 <a class="sourceLine" id="cb655-3" data-line-number="3"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Continent&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;GPD per capita&quot;</span>,</a>
 <a class="sourceLine" id="cb655-4" data-line-number="4">       <span class="dt">title =</span> <span class="st">&quot;GDP by continent&quot;</span>)</a></code></pre></div>
-<p><img src="ModernDive_files/figure-html/unnamed-chunk-603-1.png" width="\textwidth" style="display: block; margin: auto;" /></p>
+<p><img src="Bayesian-Data-Science_files/figure-html/unnamed-chunk-602-1.png" width="\textwidth" style="display: block; margin: auto;" /></p>
 <!--
 TODO: Albert needs to double check interpretation:
 -->
@@ -2631,8 +2601,8 @@ Using either the sorting functionality of RStudio’s spreadsheet viewer, we can
 <li>An arbitrarily chosen dotted red line</li>
 <li>Another arbitrarily chosen dashed green line</li>
 </ul>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-605"></span>
-<img src="ModernDive_files/figure-html/unnamed-chunk-605-1.png" alt="Regression line and two others." width="80%" />
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-604"></span>
+<img src="Bayesian-Data-Science_files/figure-html/unnamed-chunk-604-1.png" alt="Regression line and two others." width="80%" />
 <p class="caption">
 FIGURE D.2: Regression line and two others.
 </p>
@@ -2731,13 +2701,13 @@ FIGURE D.2: Regression line and two others.
 <a class="sourceLine" id="cb666-3" data-line-number="3"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Credit rating&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Credit card debt (in $)&quot;</span>, </a>
 <a class="sourceLine" id="cb666-4" data-line-number="4">       <span class="dt">title =</span> <span class="st">&quot;Debt and credit rating&quot;</span>) <span class="op">+</span></a>
 <a class="sourceLine" id="cb666-5" data-line-number="5"><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="dt">se =</span> <span class="ot">FALSE</span>)</a></code></pre></div>
-<p><img src="ModernDive_files/figure-html/unnamed-chunk-613-1.png" width="\textwidth" style="display: block; margin: auto;" /></p>
+<p><img src="Bayesian-Data-Science_files/figure-html/unnamed-chunk-612-1.png" width="\textwidth" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb667"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb667-1" data-line-number="1"><span class="kw">ggplot</span>(credit_ch6, <span class="kw">aes</span>(<span class="dt">x =</span> age, <span class="dt">y =</span> debt)) <span class="op">+</span></a>
 <a class="sourceLine" id="cb667-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
 <a class="sourceLine" id="cb667-3" data-line-number="3"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Age (in year)&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;Credit card debt (in $)&quot;</span>, </a>
 <a class="sourceLine" id="cb667-4" data-line-number="4">       <span class="dt">title =</span> <span class="st">&quot;Debt and age&quot;</span>) <span class="op">+</span></a>
 <a class="sourceLine" id="cb667-5" data-line-number="5"><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">&quot;lm&quot;</span>, <span class="dt">se =</span> <span class="ot">FALSE</span>)</a></code></pre></div>
-<p><img src="ModernDive_files/figure-html/unnamed-chunk-613-2.png" width="\textwidth" style="display: block; margin: auto;" />
+<p><img src="Bayesian-Data-Science_files/figure-html/unnamed-chunk-612-2.png" width="\textwidth" style="display: block; margin: auto;" />
 It seems that there is a positive relationship between one’s credit rating and their debt, and a slight negative between one’s age and their debt.</p>
 <p><strong>(LC6.3)</strong> Fit a new simple linear regression using <code>lm(debt ~ credit_rating + age, data = credit_ch6)</code> where <code>credit_rating</code> and <code>age</code> are the new numerical explanatory variables <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span>. Get information about the “best-fitting” regression plane from the regression table by applying the <code>get_regression_table()</code> function. How do the regression results match up with the results from your previous exploratory data analysis?</p>
 <div class="sourceCode" id="cb668"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb668-1" data-line-number="1"><span class="co"># Fit regression model:</span></a>
@@ -2870,7 +2840,7 @@ n =
 <p>To get a narrower range of the estimates.</p>
 <p><strong>(LC7.20)</strong> Figure <a href="7-sampling.html#fig:accuracy-vs-precision">7.16</a> with the targets shows four combinations of “accurate versus precise” estimates. Draw four corresponding <em>sampling distributions</em> of the sample proportion <span class="math inline">\(\widehat{p}\)</span>, like the one in the left-most plot in Figure <a href="7-sampling.html#fig:comparing-sampling-distributions-3">7.15</a>.</p>
 <p><strong>Solution</strong>:
-<img src="ModernDive_files/figure-html/unnamed-chunk-617-1.png" width="\textwidth" style="display: block; margin: auto;" /></p>
+<img src="Bayesian-Data-Science_files/figure-html/unnamed-chunk-616-1.png" width="\textwidth" style="display: block; margin: auto;" /></p>
 <p>Comment on the representativeness of the following <em>sampling methodologies</em>:</p>
 <p><strong>(LC7.21)</strong> The Royal Air Force wants to study how resistant all their airplanes are to bullets. They study the bullet holes on all the airplanes on the tarmac after an air battle against the Luftwaffe (German Air Force).</p>
 <p><strong>Solution</strong>:</p>
@@ -2995,7 +2965,7 @@ TODO:need a tidy dataset with genre
 <div class="sourceCode" id="cb676"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb676-1" data-line-number="1"><span class="kw">ggplot</span>(action_romance, <span class="kw">aes</span>(rating))<span class="op">+</span></a>
 <a class="sourceLine" id="cb676-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_histogram</span>()<span class="op">+</span></a>
 <a class="sourceLine" id="cb676-3" data-line-number="3"><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span>Action)</a></code></pre></div>
-<p><img src="ModernDive_files/figure-html/unnamed-chunk-624-1.png" width="\textwidth" style="display: block; margin: auto;" /></p>
+<p><img src="Bayesian-Data-Science_files/figure-html/unnamed-chunk-623-1.png" width="\textwidth" style="display: block; margin: auto;" /></p>
 <hr />
 </div>
 <div id="chapter-10-solutions" class="section level2">
@@ -3034,7 +3004,7 @@ TODO:need a tidy dataset with genre
 </ul>
 <p>The first condition is that the relationship between the outcome variable <span class="math inline">\(y\)</span> and the explanatory variable <span class="math inline">\(x\)</span> must be <strong>L</strong>inear.</p>
 <div class="figure" style="text-align: center"><span id="fig:non-linear2"></span>
-<img src="ModernDive_files/figure-html/non-linear2-1.png" alt="Example of a clearly non-linear relationship." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/non-linear2-1.png" alt="Example of a clearly non-linear relationship." width="\textwidth" />
 <p class="caption">
 FIGURE D.3: Example of a clearly non-linear relationship.
 </p>
@@ -3043,7 +3013,7 @@ FIGURE D.3: Example of a clearly non-linear relationship.
 <p>The second condition is that the residuals must be <strong>I</strong>ndependent. In other words, the different observations in our data must be independent of one another. As explained in <a href="10-inference-for-regression.html#independence-of-residuals">10.3.3</a>, “we say there exists <em>dependence</em> between observations”.</p>
 The third condition is that the residuals should follow a <strong>N</strong>ormal distribution.
 <div class="figure" style="text-align: center"><span id="fig:model1residualshist2"></span>
-<img src="ModernDive_files/figure-html/model1residualshist2-1.png" alt="Histogram of residuals." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/model1residualshist2-1.png" alt="Histogram of residuals." width="\textwidth" />
 <p class="caption">
 FIGURE D.4: Histogram of residuals.
 </p>
@@ -3051,7 +3021,7 @@ FIGURE D.4: Histogram of residuals.
 The fourth and final condition is that the residuals should exhibit <strong>E</strong>qual variance across all values of the explanatory variable <span class="math inline">\(x\)</span>. In other words, the value and spread of the residuals should not depend on the value of the explanatory variable <span class="math inline">\(x\)</span>.<br />
 
 <div class="figure" style="text-align: center"><span id="fig:numxplot62"></span>
-<img src="ModernDive_files/figure-html/numxplot62-1.png" alt="Plot of residuals over beauty score." width="\textwidth" />
+<img src="Bayesian-Data-Science_files/figure-html/numxplot62-1.png" alt="Plot of residuals over beauty score." width="\textwidth" />
 <p class="caption">
 FIGURE D.5: Plot of residuals over beauty score.
 </p>
@@ -3163,8 +3133,8 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/moderndive/moderndive_book/edit/master/94-appendixD.Rmd",
-"text": "Edit"
+"link": null,
+"text": null
 },
 "history": {
 "link": null,
